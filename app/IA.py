@@ -90,7 +90,7 @@ def Minimax(matrix, depth, alpha, beta, max, y, yMAX):
         print(score)
         print("Y MIN = ")
         print(yMAX)
-        return y, score
+        return yMAX, score
 ## Joue le jeton
 def play():
     y = Minimax(Matrix, 5, -math.inf, math.inf, 1, 0, 0)[0]
